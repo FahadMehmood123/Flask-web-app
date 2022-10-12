@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index.css') }}">
+    <script src="{{ url_for('static',filename='js/myfile.js') }}"></script>
+    <title>SADDL</title>
+</head>
+
+<body>
+    <div id='parent'>
+
+        <div id='child1'>
+            <img src="{{url_for('static', filename='images/illust1.jpg')}}">
+            <img src="{{url_for('static', filename='images/illust2.jpg')}}">
+            <img src="{{url_for('static', filename='images/illust3.jpg')}}">
+            <img src="{{url_for('static', filename='images/illust4.jpg')}}">
+            <img src="{{url_for('static', filename='images/illust5.jpg')}}">
+            <img src="{{url_for('static', filename='images/illust6.jpg')}}">
+            
+            
+        </div>
+
+        <div id='child2'>
+            <div id='grandchild' onmouseenter="change()" onmouseleave="noChange()">
+                <form>
+                    <h2 id="head">Students Attentiveness Detection<br>During Lecture</h2>
+                    <input id='int1' type='text' placeholder='Teacher ID'></input>
+                    <input id='int2' type='password' placeholder='Password'></input><br></br>
+                    <input id='btn' type='submit' value='Submit'></input>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
